@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../public/css/tailwind.css">
+    <link rel="stylesheet" href="./public/css/tailwind.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -217,6 +217,15 @@
             <img class="fill-current text-gray-100" width="30" height="30" src="./svg/user.svg" alt="">
         </a>
     </div>
-    <script src="./main.js"></script>
+    <script>
+        const htmlElement = document.querySelector("html");
+        const button = document.querySelectorAll(".buttonDark");
+
+        button.forEach(item => item.addEventListener("click", toggleDarkMode));
+
+        function toggleDarkMode(){
+            htmlElement.classList.toggle("dark");
+        }
+    </script>
 </body>
 </html>

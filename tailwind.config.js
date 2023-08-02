@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./public/**/*.html", "./src/**/*.{html,js}"],
+  content: ["./*.html", "./src/**/*.{html,js}"],
   darkMode: 'class',
   theme: {
     fontFamily: {
@@ -20,7 +20,7 @@ module.exports = {
 		}),
     extend: {
       backgroundImage: {
-        'sanFrancisco': "url('../img/sanFrancisco.jpg')",
+        'sanFrancisco': "url('./public/img/sanFrancisco.jpg')",
         'sanFranciscoDesktop': "url('../img/sanFranciscoDesktop.jpg')",
         'yosemite': "url('../img/yosemite.jpg')",
         'LA': "url('../img/LA.jpg')",
