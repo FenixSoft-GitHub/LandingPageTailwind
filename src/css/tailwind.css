@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.Card {
+    @apply w-48 h-64 shadow-xl rounded-lg flex-none transform hover:-translate-y-4 hover:shadow-xl
+}
+
+.Card-image {
+    @apply w-full h-3/5 rounded-t-lg  bg-cover
+}
+
+.Card-content {
+    @apply w-full h-2/5 rounded-b-lg px-4 py-2
+}
+
+.Card-title {
+    @apply font-bold text-xl
+}
+
+.Card-description {
+    @apply text-lg
+}
+
+.Card:nth-child(even)
+.Card-content {
+    @apply bg-white text-tertiary dark:bg-gray-800 dark:text-white
+}
+
+.Card:nth-child(odd)
+.Card-content {
+    @apply bg-secondary text-white dark:bg-gray-700
+}
+
+.CardTitle {
+    @apply text-3xl px-4 pt-4 pb-2 font-semibold text-white drop-shadow-lg shadow-black
+}
+
+.FaqsTitle {
+    @apply text-lg font-semibold text-primary mt-2 dark:text-white
+}
+
+.FaqsDescription {
+    @apply text-base text-black dark:text-white 
+}
+
